@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/movies.app/static/css/main.f7a83c0b.css",
+    "main.js": "/movies.app/static/js/main.5e20fe3f.js",
+    "static/js/787.28cb0dcd.chunk.js": "/movies.app/static/js/787.28cb0dcd.chunk.js",
+    "static/media/MartelSans-Regular.ttf": "/movies.app/static/media/MartelSans-Regular.a79fd9cca1038ab87040.ttf",
+    "static/media/MartelSans-Bold.ttf": "/movies.app/static/media/MartelSans-Bold.18c91ac21e95b3598c62.ttf",
+    "index.html": "/movies.app/index.html",
+    "main.f7a83c0b.css.map": "/movies.app/static/css/main.f7a83c0b.css.map",
+    "main.5e20fe3f.js.map": "/movies.app/static/js/main.5e20fe3f.js.map",
+    "787.28cb0dcd.chunk.js.map": "/movies.app/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7a83c0b.css",
+    "static/js/main.5e20fe3f.js"
+  ]
+}
