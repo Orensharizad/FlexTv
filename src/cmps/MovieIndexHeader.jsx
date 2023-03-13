@@ -36,7 +36,7 @@ export class MovieIndexHeader extends Component {
                     <Link to={'/movie'}>
                         <LogoIcon />
                     </Link>
-                    <Link to={'/profile'}>
+                    <Link to={'/member'}>
                         <img src="https://res.cloudinary.com/dsvs2bgn4/image/upload/v1675364027/AAAABfMnIhIdkM8LdU5BZaYVaxoVTrMGzIjafPBzCQUwebzxeK7JKvcI7-Jm-5AituzcdJYIT_45NSkbbTwfVva-E01G9J1YVVBveA_sydo43.png" alt="avatar" />
 
                     </Link>

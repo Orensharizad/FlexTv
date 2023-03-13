@@ -2,6 +2,7 @@ import { Component } from 'react'
 import { LogoIcon } from '../assets/icon-libary'
 import { connect } from 'react-redux';
 import { LoginSignup } from '../cmps/LoginSignup';
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,17 +13,18 @@ class _HomePage extends Component {
         isSignIn: false
     }
 
-    componentDidMount = () => {
-        const loggdinUser = JSON.parse(sessionStorage.getItem("loggdinUser"))
-        if (loggdinUser) {
-            this.props.history.push('/movie')
-        }
-    }
+    // componentDidMount = () => {
+    //     const loggdinUser = JSON.parse(sessionStorage.getItem("loggdinUser"))
+    //     if (loggdinUser) {
+    //         this.props.history.push('/movie')
+    //     }
+    // }
 
 
     setIsLogin = (diff) => {
         this.setState({ isSignIn: diff })
     }
+
 
     render() {
         const { isSignIn } = this.state
@@ -31,7 +33,7 @@ class _HomePage extends Component {
             <section className="home-page">
                 <div className='home-page-header '>
                     <div onClick={() => this.setIsLogin(false)} className="logo"><LogoIcon /></div>
-                    <button onClick={() => this.setIsLogin(true)} className='btn-sign-in'>Sign In</button>
+                    <button onClick={() => this.setIsLogin(false)} className='btn-sign-in'>Sign In</button>
                 </div>
 
                 {!isSignIn ?
@@ -42,9 +44,11 @@ class _HomePage extends Component {
                         <h3>
                             Ready to watch? Enter your email to create or restart your membership.
                         </h3>
-                        <button onClick={() => this.setIsLogin(true)} className='content-btn'>
-                            Get Started
-                        </button>
+                        <Link to={'/movie'}>
+                            <button onClick={() => this.setIsLogin(true)} className='content-btn'>
+                                Get Started
+                            </button>
+                        </Link>
                     </div>
 
                     : <LoginSignup history={this.props.history} />

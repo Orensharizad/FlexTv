@@ -9,13 +9,13 @@ import { watcherService } from '../services/watcher.service.js'
 
 export class _MovieIndex extends Component {
 
-    componentDidMount = () => {
-        const loggdinUser = JSON.parse(sessionStorage.getItem("loggdinUser"))
-        console.log('loggdinUser: ', loggdinUser);
-        if (!loggdinUser) {
-            this.props.history.push('/')
-        }
-    }
+    // componentDidMount = () => {
+    //     const loggdinUser = JSON.parse(sessionStorage.getItem("loggdinUser"))
+    //     console.log('loggdinUser: ', loggdinUser);
+    //     if (!loggdinUser) {
+    //         this.props.history.push('/')
+    //     }
+    // }
 
     render() {
         const requests = watcherService.requests()
