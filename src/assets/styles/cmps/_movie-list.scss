@@ -1,0 +1,36 @@
+.movie-list {
+    color: #fff;
+    padding: 30px;
+
+
+    .movies-container {
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+
+
+        .movie-img {
+            object-fit: contain;
+            margin-right: 10px;
+            max-width: 250px;
+            transition: transform 0.6s;
+            cursor: pointer;
+            border-radius: 3px;
+
+            &.large {
+                max-height: 310px;
+            }
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.08);
+            }
+
+        }
+    }
+}

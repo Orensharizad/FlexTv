@@ -1,0 +1,40 @@
+.movie-index-header {
+    position: fixed;
+    top: 0;
+    padding: 20px 30px;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+
+    &.header-black {
+        background-color: #111;
+    }
+
+
+    .header-content {
+
+        display: flex;
+        justify-content: space-between;
+
+        svg {
+            height: 2.3rem;
+            width: rem(80px);
+            fill: $clr1;
+
+            cursor: pointer;
+
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+
+    }
+
+}

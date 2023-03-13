@@ -1,0 +1,91 @@
+.user-profile {
+    background-color: #141414;
+    height: 100vh;
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        max-width: 800px;
+        padding-top: 8%;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .profile-title {
+            font-size: 60px;
+            font-weight: 400;
+            border-bottom: 1px solid #282c2d;
+            margin-bottom: 20px;
+        }
+    }
+
+    .profile-card {
+        display: flex;
+        gap: 15px;
+
+        .profile-content {
+            width: 100%;
+
+            .user-email {
+                background-color: gray;
+                padding: 7px;
+                padding-left: 20px;
+            }
+
+
+            .btn-signout {
+                padding: 10px 20px;
+                font-size: 1rem;
+                margin-top: 5%;
+                width: 100%;
+                color: #fff;
+                background-color: $clr1;
+                border: none;
+                cursor: pointer;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: #f40612;
+                }
+            }
+        }
+    }
+
+    .plans-container {
+        padding-top: 10px;
+
+        .plans-title {
+            border-bottom: 1px solid #282c2d;
+            padding-bottom: 10px;
+        }
+
+
+    }
+
+    .subscribe-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+
+        .btn-subscribe {
+            padding: 5px 10px;
+            font-size: 1rem;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            background-color: $clr1;
+
+            &:hover {
+                background-color: #f40612;
+            }
+
+        }
+    }
+
+
+}

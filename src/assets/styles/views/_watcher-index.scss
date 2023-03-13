@@ -1,0 +1,34 @@
+.watcher-index {
+    background-color: #141414;
+    height: 100vh;
+    text-align: center;
+
+    .watcher-index-title {
+        font-size: 3.5vw;
+        font-weight: unset;
+        padding-top: 150px;
+
+    }
+
+    .btn-add {
+        background-color: transparent;
+        border: 1px solid grey;
+        color: grey;
+        cursor: pointer;
+        font-size: 1.2vw;
+        letter-spacing: 2px;
+        margin: 2em 0 1em;
+        padding: 0.5em 1.5em;
+
+        &:hover {
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
+
+    .btn-back {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+}

@@ -1,0 +1,13 @@
+.watcher-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    width: 60%;
+    // max-width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+
+    .watcher-list-title {
+        font-size: 3.5vw;
+        font-weight: unset;
+    }
+}
